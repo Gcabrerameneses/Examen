@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
@@ -20,16 +20,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-       
+
         <li class="nav-item active">
-          <a class="nav-link Warning link" href="registro.html">Registro</a>
+          <a class="nav-link" href="\templates/login.html">Registro</a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="nav-link" href="\templates/login.html">login</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">login</a>
+          <a class="nav-link"  href="\templates\productos.html">Productos</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link Warning link">Productos</a>
-        </li>
+          <a class="nav-link"  href="\templates\historial.html">Historial</a>
+        </li>        
       </ul>
     </div>
   </nav>
@@ -38,22 +42,23 @@
       <div class="abs-center"></div>
       <div class="carousel-inner">
         <div class="carousel-item active" dagta-interval="800">
-          <img src="imagenes/1.2.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+          <img src="/imagenes/1.2.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+        </div>
+        
+        <div class="carousel-item" data-interval="1000">
+          <img src="/imagenes/elias.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
         </div>
         <div class="carousel-item" data-interval="1000">
-          <img src="imagenes/elias.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+          <img src="/imagenes/1.4.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
         </div>
         <div class="carousel-item" data-interval="1000">
-          <img src="imagenes/1.4.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+          <img src="/imagenes/hxh.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
         </div>
         <div class="carousel-item" data-interval="1000">
-          <img src="imagenes/hxh.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+          <img src="/imagenes/denji.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
         </div>
         <div class="carousel-item" data-interval="1000">
-          <img src="imagenes/denji.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
-        </div>
-        <div class="carousel-item" data-interval="1000">
-          <img src="imagenes/spy.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
+          <img src="/imagenes/spy.png" class="d-block w-100" alt="auto" width="auto" height="auto" class="img-fluid">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
@@ -66,15 +71,16 @@
       </button>
     </div>
   </div>
-</div>
-  <footer class="footer footer-muted bg-secondary">
-    <div class="container text-red">
+
+  <!--Fin Carrusel-->
+  <footer class="footer footer-muted bg-secondary" style="color: white;">
+    <div class="container">
       <br>
       <div class="row">
         <div class="col-12 col-md-4 col-lg-2">
           <h4>Contacto</h4>
           <p> Tel&eacute;fonos:223540600
-            <p> eMail:tie_an@gmail.com</p>
+          <p> eMail:tie_an@gmail.com</p>
         </div>
         <div class="col-12 col-md-4 col-lg-4">
           <h4 id="contacto">Donde estamos:</h4>
@@ -86,7 +92,7 @@
           <p>
             Mapa
           </p>
-          <img src="imagenes/mapa.png" class="d-block w-50" alt="50" width="50" height="auto" class="img-fluid">
+          <img src="/imagenes/mapa.png" class="d-block w-50" alt="50" width="50" height="auto" class="img-fluid">
         </div>
       </div>
     </div>
