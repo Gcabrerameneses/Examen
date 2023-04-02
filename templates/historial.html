@@ -1,23 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
 
+        <nav class="navbar navbar-dark bg-secondary">
+            <a class="navbar-brand" href="index.html">Full Anime</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
         
+                <li class="nav-item active">
+                  <a class="nav-link" href="\templates/login.html">Registro</a>
+                </li>
+        
+                <li class="nav-item active">
+                  <a class="nav-link" href="\templates/login.html">login</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"  href="\templates\productos.html">Productos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"  href="\templates\historial.html">Historial</a>
+                </li>        
+              </ul>
+            </div>
+          </nav>
+
     </header>
-    
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-          <li class="breadcrumb-item"><a href="#">Página 1</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Página 2</li>
-        </ol>
-      </nav>
+
+  <section>
+<div class="container-fluid m-auto">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Costo</th>
+            <th scope="col">Folio</th>
+            <th scope="col">Accion</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Rene</td>
+            <td>25/03/23</td>
+            <td>$50.000</td>
+            <td>123456</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Gabriela</td>
+            <td>01/04/23</td>
+            <td>$150.000</td>
+            <td>987654</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Ramon Salazar</td>
+            <td>2023-03-22</td>
+            <td>$111,522</td>
+            <td>835283</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Leon S. Kennedy</td>
+            <td>2023-06-19</td>
+            <td>$165,015</td>
+            <td>439781</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Ada Wong</td>
+            <td>2023-02-21</td>
+            <td>$72,046</td>
+            <td>697161</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Osmund Saddler</td>
+            <td>2023-11-27</td>
+            <td>$70,423</td>
+            <td>187257</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Bitores Mendez</td>
+            <td>2023-01-16</td>
+            <td>$152,209</td>
+            <td>118527</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Ashley Graham</td>
+            <td>2023-02-27</td>
+            <td>$57,786</td>
+            <td>722874</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Jack Krauser</td>
+            <td>2023-01-23</td>
+            <td>$98,585</td>
+            <td>123456</td>
+            <td>
+                <button type="button" class="btn btn-info">Detalle Boleta</button>
+                <button type="button" class="btn btn-warning">Ayuda</button>
+                <button type="button" class="btn btn-danger">Reclamo</button>            </td>            
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+  </section>
+
+  <!--Fin Carrusel-->
+  <footer class="footer footer-muted bg-secondary" style="color: white;">
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-2">
+          <h4>Contacto</h4>
+          <p> Tel&eacute;fonos:223540600
+          <p> eMail:tie_an@gmail.com</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4">
+          <h4 id="contacto">Donde estamos:</h4>
+          <p>Santiago</p>
+          <p>Direcci&oacute;n:Padre Alonso de Ovalle 1586- Santiago Centro
+          </p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-6">
+          <p>
+            Mapa
+          </p>
+          <img src="/imagenes/mapa.png" class="d-block w-50" alt="50" width="50" height="auto" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
