@@ -1,5 +1,18 @@
 [
-{"producto":"Power y Denji","valor":24.990,"foto":"/imagenes/hanami.png"},
-{"producto":"Power y Denji","valor":24.990,"foto":"/imagenes/hanami.png"}
+{"foto":"/imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/hanami.png","nombre":"Hanamichi Sakuragi","categoria":"Figuras coleccionables.","valor":39.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/rai.png","nombre":"Rayman","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/slam1.png","nombre":"Hanamichi  y profesor Anzai","categoria":"Figuras coleccionables.","valor":44.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/pochi.png","nombre":"Pochita","categoria":"Figuras coleccionables.","valor":18.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/pawer2.png","nombre":"Power","categoria":"Figuras coleccionables.","valor":39.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/rai2.png","nombre":"Rayman Mario","categoria":"Figuras coleccionables.","valor":25.235,"stock":"Stock limitado."},
+{"foto":"/imagenes/slam2.png","nombre":"Haruko Akagi","categoria":"Figuras coleccionables.","valor":20.200,"stock":"Stock limitado."},
+{"foto":"/imagenes/inu2.png","nombre":"Inuyasha","categoria":"Figuras coleccionables.","valor":15.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/sailor.png","nombre":"Sailor Moon","categoria":"Figuras coleccionables.","valor":19.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/slam3.png","nombre":"Kiminobu Kogure","categoria":"Figuras coleccionables.","valor":10.000,"stock":"Stock limitado."},
+{"foto":"/imagenes/dark.png","nombre":"Darth Vader","categoria":"Figuras coleccionables.","valor":22.890,"stock":"Stock limitado."},
+{"foto":"/imagenes/arturito.png","nombre":"R2d2","categoria":"Figuras coleccionables.","valor":15.990,"stock":"Stock limitado."},
+{"foto":"/imagenes/lol1.png","nombre":"Jinx / Vi","categoria":"Figuras coleccionables.","valor":30.990,"stock":"Stock limitado."}
+
 
 ]
