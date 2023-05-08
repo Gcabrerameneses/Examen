@@ -1,0 +1,13 @@
+.modal-content {
+    border-radius: 20px;
+  }
+
+#modal-image {
+    border-radius: 5%;
+    margin: auto;
+    display: block;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
