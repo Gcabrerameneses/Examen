@@ -1,6 +1,13 @@
 <<<<<<< HEAD
 .DS_Store
+<<<<<<< HEAD
 =======
 .DS_Store
 imagenes/.DS_Store
+>>>>>>> main
+=======
+imagenes/.DS_Store
+css/.DS_Store
+Json/.DS_Store
+templates/.DS_Store
 >>>>>>> main
