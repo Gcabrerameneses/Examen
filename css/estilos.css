@@ -11,3 +11,14 @@
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
 }
+
+#contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-title {
+  text-align: center;
+}

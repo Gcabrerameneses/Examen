@@ -1,5 +1,17 @@
-[
-{"producto":"Power y Denji","valor":24.990,"foto":"/imagenes/hanami.png"},
-{"producto":"Power y Denji","valor":24.990,"foto":"/imagenes/hanami.png"}
-
-]
+[{"id":1,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":2,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denjsssi","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":3,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":4,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":5,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":6,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":7,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":8,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":9,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":10,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":11,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":12,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":13,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":14,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":15,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":16,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."},
+{"id":17,"foto":"../imagenes/dejipaw.png","nombre":"Power y Denji","categoria":"Figuras coleccionables.","valor":24.990,"stock":"Stock limitado."}]

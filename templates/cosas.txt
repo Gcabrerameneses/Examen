@@ -1,0 +1,107 @@
+<script>
+    $(document).ready(function(){
+        $(".btn-primary").click(function(){
+            var rutaDeLaImagen = $(this).parents(".card").find(".card-img-top").attr('src');
+            var label1 = $(this).parents(".card").find("#card1-label1").text();
+            var label2 = $(this).parents(".card").find("#card1-label2").text();
+            var label3 = $(this).parents(".card").find("#card1-label3").text();
+            var titulo = $(this).parents(".card").find(".card-title").text(); //Extraer título del card
+
+            $("#modal-label-1").text(label1);
+            $("#modal-label-2").text(label2);
+            $("#modal-label-3").text(label3);
+    
+            $("#modal-image").attr('src', rutaDeLaImagen);
+            $("#label1").text(label1);
+            $("#label2").text(label2);
+            $("#label3").text(label3);
+            $("#myModalLabel").text(titulo); // Pasar el título al modal
+
+            $("#myModal").modal();
+        });
+    });
+
+</script>
+
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+          <div class="modal-content text-center">
+              <div class="modal-header ">
+                  <h5 class="modal-title" id="myModalLabel">Detalles del producto</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+              <div class="modal-body text-center">
+                  <img id="modal-image" src="" alt="Imagen del Modal" style="display: inline-block; margin: 0 auto; width: 400px;">
+                  <h5 id="modal-title"></h5>
+
+                  <p id="label1"></p>
+                  <p id="label2"></p>
+                  <p id="label3"></p>
+
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+              </div>
+          </div>
+          </div>
+      </div>
+
+      --------------
+
+
+      <script>
+  $(document).ready(function(){
+    $(".btn-primary").click(function(){
+      var rutaDeLaImagen = $(this).parents(".card").find(".card-img-top").attr('src');
+      var label1 = $(this).parents(".card").find("#card1-label1").text();
+      var label2 = $(this).parents(".card").find("#card1-label2").text();
+      var label3 = $(this).parents(".card").find("#card1-label3").text();
+      var titulo = $(this).parents(".card").find(".card-title").text(); //Extraer título del card
+  
+      $("#modal-label-1").text(label1);
+      $("#modal-label-2").text(label2);
+      $("#modal-label-3").text(label3);
+  
+      $("#modal-image").attr('src', rutaDeLaImagen);
+      $("#myModalLabel").text(titulo); // Pasar el título al modal
+  
+      $("#myModal").modal();
+    });
+  });
+
+</script>
+  
+
+<script>
+  $(document).ready(function() {
+    $.ajax({
+      url: '../Json/productos_2.Json',
+      dataType: 'json',
+      success: function(data) {
+        let html = '';
+        data.forEach((elemento) => {
+          html += '<section class="producto">';
+            html += '<div class="card" style="width: 18rem">';
+          html += '<img src="' + elemento.foto + '" class="card-img-top" alt="' + elemento.nombre + '">';
+          html += '<div class="card-body">';
+          html += '<h5 class="card-title">' + elemento.nombre + '</h5>';
+          html += '<p class="card-text">Precio: ' + elemento.valor + '</p>';
+          html += '<button onClick="agregarCarro(\'' + elemento.nombre + '\',' + elemento.valor + ')" class="btn btn-danger">Comprar</button>';
+          html += '</div>';
+          html += '</div>';
+          html += '</section>';
+        });
+        $('#contenedor-productos').html(html);
+      },
+      error: function() {
+        console.error('Error al cargar los datos del producto.');
+      }
+    });
+  });
+</script>
