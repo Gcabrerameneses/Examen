@@ -32,7 +32,7 @@
                             <a class="nav-link" href="\templates/login.html">login</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link"  href="\templates\productos.html">Productos</a>
+                            <a class="nav-link"  href="\templates\producto.html">Productos</a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link"  href="\templates\historial.html">Historial</a>
@@ -48,7 +48,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mx-auto mt-5">
-                    <form>
+                    <form id="login-form">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+                        
+                        <button type="submit">Iniciar sesión</button>
+                      </form>
+                    <!--<form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -60,7 +69,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Ingresar</button>
                         <button type="submit" class="btn btn-danger">Olvide mi contraseña</button>
-                    </form>
+                    </form> -->
                 </div>
             </div>
         </div>
@@ -107,5 +116,35 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <script src="../Json/ajax.js"></script>
     </body>
-
+    <script>
+        $(document).ready(function() {
+          // Manejar el evento de envío del formulario
+          $('#login-form').submit(function(event) {
+            // Detener el comportamiento predeterminado de enviar el formulario
+            event.preventDefault();
+        
+            // Obtener los valores de los campos de correo electrónico y contraseña
+            var email = $('#email').val();
+            var password = $('#password').val();
+        
+            // Enviar una solicitud AJAX al servidor
+            $.ajax({
+              url: '/login',
+              type: 'POST',
+              data: {
+                email: email,
+                password: password
+              },
+              success: function(data) {
+                // Manejar la respuesta del servidor en caso de éxito
+                alert('Inicio de sesión exitoso');
+              },
+              error: function() {
+                // Manejar la respuesta del servidor en caso de error
+                alert('Inicio de sesión fallido');
+              }
+            });
+          });
+        });
+        </script>
 </html>

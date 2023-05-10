@@ -30,7 +30,7 @@
                   <a class="nav-link" href="\templates/login.html">login</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link"  href="\templates\productos.html">Productos</a>
+                  <a class="nav-link"  href="\templates\producto.html">Productos</a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link"  href="\templates\historial.html">Historial</a>
@@ -136,9 +136,19 @@
   
         // Mostrar datos del producto en el modal
         $('#myModal').on('show.bs.modal', function (event) {
+          
           var button = $(event.relatedTarget); // Button that triggered the modal
           var id = button.data('id'); // Extract info from data-* attributes
           var producto = data.find(p => p.id == id); // Find product by id
+          var productoCarrito = {
+            id: producto.id,
+            nombre: producto.nombre,
+            valor: producto.valor
+          };
+          carrito.push(productoCarrito);
+          // Guardar el carrito en el localStorage
+          localStorage.setItem('carrito', JSON.stringify(carrito));
+
           var modal = $(this);
           modal.find('.modal-title').addClass('text-center').text(producto.nombre);
           modal.find('#modal-image').addClass('border 1px').attr('src', producto.foto);
