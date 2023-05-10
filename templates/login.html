@@ -49,27 +49,18 @@
             <div class="row">
                 <div class="col-md-6 mx-auto mt-5">
                     <form id="login-form">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <label for="password">Contraseña:</label>
-                        <input type="password" id="password" name="password" required>
-                        
-                        <button type="submit">Iniciar sesión</button>
-                      </form>
-                    <!--<form>
+                    <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                required>
+                            <label for="email" class="form-label">Correo</label>
+                            <input type="email"  id="email" name ="email"  class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" required>
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
                         </div>
                         <button type="submit" class="btn btn-primary">Ingresar</button>
-                        <button type="submit" class="btn btn-danger">Olvide mi contraseña</button>
-                    </form> -->
+                        <!-- <button type="submit" class="btn btn-danger">Olvide mi contraseña</button> -->
+                    </form>
                 </div>
             </div>
         </div>
@@ -118,33 +109,48 @@
     </body>
     <script>
         $(document).ready(function() {
-          // Manejar el evento de envío del formulario
-          $('#login-form').submit(function(event) {
-            // Detener el comportamiento predeterminado de enviar el formulario
-            event.preventDefault();
-        
-            // Obtener los valores de los campos de correo electrónico y contraseña
-            var email = $('#email').val();
-            var password = $('#password').val();
-        
-            // Enviar una solicitud AJAX al servidor
-            $.ajax({
-              url: '/login',
-              type: 'POST',
-              data: {
-                email: email,
-                password: password
-              },
-              success: function(data) {
-                // Manejar la respuesta del servidor en caso de éxito
-                alert('Inicio de sesión exitoso');
-              },
-              error: function() {
-                // Manejar la respuesta del servidor en caso de error
-                alert('Inicio de sesión fallido');
+            // Manejar el evento de envío del formulario
+            $('#login-form').submit(function(event) {
+              // Detener el comportamiento predeterminado de enviar el formulario
+              event.preventDefault();
+            
+              // Obtener los valores de los campos de correo electrónico y contraseña
+              var email = $('#email').val();
+              var password = $('#password').val();
+            
+              // Obtener los datos del almacenamiento local
+              var datos = localStorage.getItem('formData');
+            
+              if (datos) {
+                var datosObjeto = JSON.parse(datos);
+            
+                if (datosObjeto.email === email) {
+                  // El correo electrónico existe en los datos almacenados
+                  // Realiza la validación de la contraseña aquí
+                  console.log('El correo electrónico existe en los datos almacenados');
+                  //alert('El correo electrónico existe en los datos almacenados');
+                  if (datosObjeto.password === password) {
+                    // Las contraseñas coinciden
+                    console.log('Login exitoso');
+                    alert('Login exitoso');
+                  } else {
+                    // Las contraseñas no coinciden
+                    console.log('Login fallido: Contraseña incorrecta');
+                    alert('Login fallido: Contraseña incorrecta');
+                  }
+
+                } else {
+                  // El correo electrónico no existe en los datos almacenados
+                  console.log('El correo electrónico no existe en los datos almacenados');
+                  alert('Usuario no registrado');
+                }
+              } else {
+                // No hay datos almacenados
+                console.log('No hay datos almacenados');
+                alert('No hay datos almacenados');
               }
             });
           });
-        });
+          
         </script>
 </html>

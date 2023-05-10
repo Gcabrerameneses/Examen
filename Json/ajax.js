@@ -13,7 +13,7 @@ else{
 }
 var Mensaje = "Productos agregados: "+ListaCarro.length
 carrito.html(Mensaje)
-
+/*
 $.ajax({
 
     url:"productos.json",
@@ -34,7 +34,7 @@ $.ajax({
         alert("fail");
     }
 });
-
+*/
 function agregarCarro(producto,valor){
     console.log(ListaCarro)
     
